@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Пример сайта с настоящей рекламой">
+    <title>Пример сайта с настоящей рекламой</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Простая стилизация */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Место для рекламных баннеров */
+        .advertisement {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .advertisement img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Пример сайта с настоящей рекламой</h1>
+        <p>Добро пожаловать на наш сайт. Здесь можно размещать настоящую рекламу, например, через Google AdSense!</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <!-- Основной контент -->
+            <div class="main-content">
+                <h2>Заголовок статьи</h2>
+                <p>Это пример текста на сайте. Вы можете добавлять свои статьи, новости или любую информацию, которую хотите представить вашим пользователям.</p>
+                
+                <!-- Рекламный блок 1 (реальная реклама от Google AdSense) -->
+                <div class="advertisement">
+                    <h3>Реклама 1</h3>
+                    <!-- Место для рекламы (например, Google AdSense) -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXX"   <!-- Замените на ваш ID из Google AdSense -->
+                         data-ad-slot="XXXXXX"            <!-- Замените на ваш слот из Google AdSense -->
+                         data-ad-format="auto"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <p>Дополнительный текст статьи...</p>
+            </div>
+
+            <!-- Боковая панель с рекламой -->
+            <div class="sidebar">
+                <h3>Реклама</h3>
+                <!-- Место для рекламы -->
+                <div class="advertisement">
+                    <h4>Реклама 2</h4>
+                    <!-- Пример рекламного баннера -->
+                    <img src="https://via.placeholder.com/300x250" alt="Реклама 2">
+                    <!-- Вы можете заменить этот баннер на свой реальный баннер для рекламы -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Все права защищены &copy; 2025</p>
+    </div>
+
+</body>
+</html>
